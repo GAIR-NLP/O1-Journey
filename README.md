@@ -167,14 +167,14 @@ The specific introductions of the team members are as follows:
 
 | Profile | Name| Introduction  |
 |---|---|---|
-|![](./images/profiles/yiwei.jpg)|[Yiwei Qin](https://qinyiwei.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/xuefeng.png)|[Xuefeng Li](https://github.com/hongtangshui)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/haoyang.png)|[Haoyang Zou](https://github.com/haoy-zzz)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/yixiu.png)|[Yixiu Liu](https://github.com/yxliu0903)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/shijie.jpg)|[Shijie Xia](https://shijie-xia.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/huangzhen.png)|[Zhen Huang](https://huangzhen02.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/yixin.png)|[Yixin Ye](https://github.com/BLeaves)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/weizhe.jpg)|[Weizhe Yuan](https://yyy-apple.github.io/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/hector.png)|[Hector Liu](https://hunterhector.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/yuanzhi.jpeg)|[Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
-|![](./images/profiles/pengfei.jpg)|[Pengfei Liu](https://plms.ai/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/yiwei.jpg" width="100">|[Yiwei Qin](https://qinyiwei.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/xuefeng.png" width="100">|[Xuefeng Li](https://github.com/hongtangshui)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/haoyang.png" width="100">|[Haoyang Zou](https://github.com/haoy-zzz)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/yixiu.png" width="100">|[Yixiu Liu](https://github.com/yxliu0903)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/shijie.jpg" width="100">|[Shijie Xia](https://shijie-xia.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/huangzhen.png" width="100">|[Zhen Huang](https://huangzhen02.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/yixin.png" width="100">|[Yixin Ye](https://github.com/BLeaves)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/weizhe.jpg" width="100">|[Weizhe Yuan](https://yyy-apple.github.io/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/hector.png" width="100">|[Hector Liu](https://hunterhector.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/yuanzhi.jpeg" width="100">|[Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|<img src="./images/profiles/pengfei.jpg" width="100">|[Pengfei Liu](https://plms.ai/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
