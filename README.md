@@ -4,10 +4,12 @@
 
 [Yiwei Qin](https://qinyiwei.github.io)\*, [Xuefeng Li](https://github.com/hongtangshui)\*, [Haoyang Zou](https://github.com/haoy-zzz)\*, [Yixiu Liu](https://github.com/yxliu0903)\*, [Shijie Xia](https://shijie-xia.github.io/)\*, [Zhen Huang](https://huangzhen02.github.io), [Yixin Ye](https://github.com/BLeaves), [Weizhe Yuan](https://yyy-apple.github.io/), [Hector Liu](https://hunterhector.github.io), [Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/), [Pengfei Liu](https://plms.ai/)+
 
-* "*" Core contributors, 
+* "*" Core contributors
 * "+" Corresponding Author
 
 Shanghai Jiao Tong University, New York University, MBZUAI, Generative AI Research Lab (GAIR)
+
+We are gradually releasing resources, and more will be available soon. Stay tuned as we continue to share new updates over time!
 
 ## Contents
 
@@ -24,9 +26,11 @@ Shanghai Jiao Tong University, New York University, MBZUAI, Generative AI Resear
     - [How to Evaluate our Trials?](#how-to-evaluate-our-trials)
     - [How to Train our Models?](#how-to-train-our-models)
     - [What would be an effective annotation strategy for human-ai collaboration?](#what-would-be-an-effective-annotation-strategy-for-human-ai-collaboration)
-- [A Real Example](#a-real-example)
+- [Some Real Examples](#some-real-examples)
 - [Released Resources](#released-resources)
 - [About the Team](#about-the-team)
+- [Contact us](#contact-us)
+- [Citation](#citation)
 
 
 ## Introduction
@@ -155,7 +159,13 @@ Once the human annotations are completed, AI-driven processes take over. We use 
 - **Student-Explorer Perspective:** The LLMs approach problem-solving with curiosity, thinking through it as if for the first time, encouraging critical engagement in the learning process.
 
 
-## A Real Example
+## Some Real Examples
+
+<p align="center"> <img src="./images/our-case1.png" style="width: 80%;" id="title-icon">       </p>
+
+<p align="center"> <img src="./images/our-case2.png" style="width: 80%;" id="title-icon">       </p>
+
+<p align="center"> <img src="./images/our-case3.png" style="width: 80%;" id="title-icon">       </p>
 
 
 ## Released Resources
