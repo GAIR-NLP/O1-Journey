@@ -141,6 +141,10 @@ The SFT process consists of two stages:
 
 In this phase, we generate 20 responses per question from the MATH Train dataset, a re-divided dataset from PRM800k that includes 12,000 examples, using nucleus sampling with `top_p = 0.95` and temperature `T = 0.7`. These 20 responses are categorized into positive and negative responses based on the correctness of the final answer. From these, we randomly select 5 positive responses and 5 negative responses to create 5 preference pairs. We then train the model using these preference pairs with DPO loss, allowing it to learn from the comparison of correct and incorrect answers.
 
+#### Results
+
+<p align="center"> <img src="./images/results.png" style="width: 80%;" id="title-icon">       </p>
+
 
 ### What would be an effective annotation strategy for human-ai collaboration?
 
