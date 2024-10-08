@@ -181,7 +181,7 @@ The specific introductions of the team members are as follows:
 
 ## Contact Us
 
-If you are interested in our project and would like to join us, feel free to send an email to [stefanpengfei@gmail.com](stefanpengfei@gmail.com).
+If you are interested in our project and would like to join us, feel free to send an email to [stefanpengfei@gmail.com](mailto:stefanpengfei@gmail.com).
 
 ## Citation
 
