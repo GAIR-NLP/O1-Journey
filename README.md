@@ -1,5 +1,11 @@
 # O1 Replication Journey: A Strategic Progress Report
 
+[Yiwei Qin](https://qinyiwei.github.io)\*, [Xuefeng Li](https://github.com/hongtangshui)\*, [Haoyang Zou](https://github.com/haoy-zzz)\*, [Yixiu Liu](https://github.com/yxliu0903)\*, [Shijie Xia](https://shijie-xia.github.io/)\*, [Zhen Huang](https://huangzhen02.github.io), [Yixin Ye](https://github.com/BLeaves), [Weizhe Yuan](https://yyy-apple.github.io/), [Hector Liu](https://hunterhector.github.io), [Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/), [Pengfei Liu](https://plms.ai/)+
+
+* "*" Core contributors, 
+* "+" Corresponding Author
+
+Shanghai Jiao Tong University, New York University, MBZUAI, Generative AI Research Lab (GAIR)
 
 ## Contents
 
@@ -7,6 +13,18 @@
 - [About Progress Report](#about-progress-report)
 - [Journey Learning](#journey-learning)
 - [Exploration Journey](#exploration-journey)
+    - [What does O1’s Thought Look Like?](#what-does-o1s-thought-look-like)
+    - [How does Long Thought Work?](#how-does-long-thought-work)
+    - [How to Construct Long Thoughts?](#how-to-construct-long-thoughts)
+    - [How to Construct Reward Model?](#how-to-construct-reward-model)
+    - [How to Construct an On-policy Reasoning Tree?](#how-to-construct-an-on-policy-reasoning-tree)
+    - [How to Derive a Long Thought from a Reasoning Tree?](#how-to-derive-a-long-thought-from-a-reasoning-tree)
+    - [How to Evaluate our Trials?](#how-to-evaluate-our-trials)
+    - [How to Train our Models?](#how-to-train-our-models)
+    - [What would be an effective annotation strategy for human-ai collaboration?](#what-would-be-an-effective-annotation-strategy-for-human-ai-collaboration)
+- [A Real Example](#a-real-example)
+- [Released Resources](#released-resources)
+- [About the Team](#about-the-team)
 
 
 ## Introduction
@@ -23,7 +41,7 @@ Modern AI research often involves prolonged, collaborative efforts that extend f
 
 ## Journey Learning
 
-![](./images/journey_learning.png)
+<p align="center"> <img src="./images/journey_learning.png" style="width: 90%;" id="title-icon">       </p>
 
 Many current machine learning and large language model approaches can be described as “shortcut learning.” This method focuses on achieving quick results by heavily relying on large amounts of data to improve performance. However, it often struggles with generalization, meaning it performs poorly in situations outside its training data, and lacks the ability to self-correct mistakes. While it has driven advancements, shortcut learning shows limitations in handling complex, dynamic, and open-ended challenges, making it less effective for developing truly intelligent AI.
 
@@ -74,7 +92,7 @@ To build an effective reward model, the first step is determining the appropriat
 
 We tested both open-source and proprietary reward models on subsets of the PRM800K and MR-GSM8K datasets, comparing their performance. The results, presented in our tables, show that O1-mini consistently performs best across different datasets.
 
-![](./images/process_meta_eval.png)
+<p align="center"> <img src="./images/process_meta_eval.png" style="width: 80%;" id="title-icon">       </p>
 
 
 ### How to Construct an On-policy Reasoning Tree?
@@ -99,7 +117,7 @@ Once the reasoning tree is constructed, the next step is to derive a long though
 
 ### How to Evaluate our Trials?
 
-![](./images/platform.png)
+<p align="center"> <img src="./images/platform.png" style="width: 80%;" id="title-icon">       </p>
 
 In addition to testing accuracy scores using specific evaluation metrics on benchmarks, manually reviewing actual cases is a crucial step in evaluating data and models. Therefore, to provide a more intuitive way to evaluate the model’s performance on specific problems, we build a visual data analysis platform using Streamlit. Specifically, our visualization platform includes the visualization of synthetic trees and their corresponding long thoughts as well as the output of the trained model. Furthermore, when visualizing results, we support detailed conditional filtering, such as filtering for correctly or incorrectly answered questions, or whether the output contains keywords indicating reflection or hesitation (e.g., “wait”). Additionally, we support comparison between different iterations of synthetic data and model outputs, which makes it highly intuitive and helps us easily validate whether the new round of data or models is effective.
 
@@ -136,3 +154,27 @@ Once the human annotations are completed, AI-driven processes take over. We use 
 
 
 ## A Real Example
+
+
+## Released Resources
+
+
+## About the Team
+
+The core development team of this project mainly consists of third- and fourth-year undergraduate students, as well as first-year PhD students from the GAIR research group at Shanghai Jiao Tong University. The project has been guided by leading research scientists in the field of large language models, including those from NYU.
+
+The specific introductions of the team members are as follows:
+
+| Profile | Name| Introduction  |
+|---|---|---|
+|![](./images/profiles/yiwei.jpg)|[Yiwei Qin](https://qinyiwei.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/xuefeng.png)|[Xuefeng Li](https://github.com/hongtangshui)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/haoyang.png)|[Haoyang Zou](https://github.com/haoy-zzz)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/yixiu.png)|[Yixiu Liu](https://github.com/yxliu0903)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/shijie.jpg)|[Shijie Xia](https://shijie-xia.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/huangzhen.png)|[Zhen Huang](https://huangzhen02.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/yixin.png)|[Yixin Ye](https://github.com/BLeaves)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/weizhe.jpg)|[Weizhe Yuan](https://yyy-apple.github.io/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/hector.png)|[Hector Liu](https://hunterhector.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/yuanzhi.jpeg)|[Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+|![](./images/profiles/pengfei.jpg)|[Pengfei Liu](https://plms.ai/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
