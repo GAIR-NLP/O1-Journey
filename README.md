@@ -32,14 +32,15 @@ To address these limitations, we propose a new approach: “journey learning.”
 
 ## Exploration Journey
 
-![](./images/exploration_journey.png)
+<p align="center"> <img src="./images/exploration_journey.png" style="width: 90%;" id="title-icon">       </p>
 
 We explore several questions which highlight a critical aspect of O1’s cognitive processes. We start by examining the structure of O1’s thoughts and progress to more advanced concepts, such as the development of reward models, on-policy reasoning trees, and how these elements come together in constructing long thoughts. Our methodology, as depicted in our research timeline, emphasizes iterative evaluation and training strategies, combining both quantitative assessments and human feedback.
 
 ### What does O1’s Thought Look Like?
 
 
-![](./images/o1_analysis.png)
+
+<p align="center"> <img src="./images/o1_analysis.png" style="width: 60%;" id="title-icon">       </p>
 
 Our analysis focuses on O1’s reasoning examples provided by OpenAI, which includes eight instances of problem-solving steps for complex tasks. We categorized these examples by problem type and difficulty, observing that as problem difficulty increases, so does the length of the model’s responses in both tokens and lines. This trend suggests that more challenging problems require more reasoning steps.
 
@@ -48,7 +49,7 @@ Our analysis focuses on O1’s reasoning examples provided by OpenAI, which incl
 Beyond just response length, we analyzed keyword frequencies. Words like “consider,” “if,” and “possible” frequently appear in more complex problems, indicating the model is exploring multiple solution paths. Keywords such as “wait” and “alternatively” signal the model’s ability to reflect and self-correct, suggesting a deeper, non-linear reasoning process.
 
 
-![](./images/o1_example.png)
+<p align="center"> <img src="./images/o1_example.png" style="width: 60%;" id="title-icon">       </p>
 
 Additionally, we manually reviewed O1’s approach to solving mathematical problems, revealing a methodical thought process. The model uses iterative problem-solving techniques, breaking down complex equations, and frequently reassessing its steps for consistency. It also tests multiple hypotheses and concludes by verifying its final solution, ensuring accuracy and reliability in its reasoning.
 
