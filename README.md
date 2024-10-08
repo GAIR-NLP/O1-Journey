@@ -1,5 +1,7 @@
 # O1 Replication Journey: A Strategic Progress Report
 
+![](./images/cute_o1.png)
+
 [Yiwei Qin](https://qinyiwei.github.io)\*, [Xuefeng Li](https://github.com/hongtangshui)\*, [Haoyang Zou](https://github.com/haoy-zzz)\*, [Yixiu Liu](https://github.com/yxliu0903)\*, [Shijie Xia](https://shijie-xia.github.io/)\*, [Zhen Huang](https://huangzhen02.github.io), [Yixin Ye](https://github.com/BLeaves), [Weizhe Yuan](https://yyy-apple.github.io/), [Hector Liu](https://hunterhector.github.io), [Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/), [Pengfei Liu](https://plms.ai/)+
 
 * "*" Core contributors, 
