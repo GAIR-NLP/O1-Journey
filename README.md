@@ -29,17 +29,17 @@ We are gradually releasing resources, and more will be available soon. Stay tune
 
 We present a few intuitive examples of math problems, from which it can be seen that our currently trained model demonstrates OpenAI O1’s abilities of self-reflection, self-correction, and backtracking, performing well on complex problems.
 
-<details>
-<summary>Case 1</summary>
 
-<p align="center"> <img src="./images/our-case1.png" style="width: 80%;" id="title-icon">       </p>
+Case 1: (A detailed case comparing our model with OpenAI O1-preview and GPT-4o)
 
-</details>
+<p align="center"> <img src="./images/case_compare.png" style="width: 100%;" id="title-icon">       </p>
+
+
 
 <details>
 <summary>Case 2</summary>
 
-<p align="center"> <img src="./images/our-case2.png" style="width: 80%;" id="title-icon">       </p>
+<p align="center"> <img src="./images/our-case1.png" style="width: 80%;" id="title-icon">       </p>
 
 </details>
 
@@ -47,7 +47,7 @@ We present a few intuitive examples of math problems, from which it can be seen 
 <details>
 <summary>Case 3</summary>
 
-<p align="center"> <img src="./images/our-case3.png" style="width: 80%;" id="title-icon">       </p>
+<p align="center"> <img src="./images/our-case2.png" style="width: 80%;" id="title-icon">       </p>
 
 </details>
 
