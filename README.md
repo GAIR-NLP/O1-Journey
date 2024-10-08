@@ -178,3 +178,15 @@ The specific introductions of the team members are as follows:
 |<img src="./images/profiles/hector.png" width="100">|[Hector Liu](https://hunterhector.github.io)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 |<img src="./images/profiles/yuanzhi.jpeg" width="100">|[Yuanzhi Li](https://mbzuai.ac.ae/study/faculty/yuanzhi-li/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 |<img src="./images/profiles/pengfei.jpg" width="100">|[Pengfei Liu](https://plms.ai/)|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
+
+## Contact Us
+
+If you are interested in our project and would like to join us, feel free to send an email to [stefanpengfei@gmail.com](stefanpengfei@gmail.com).
+
+## Citation
+
+If you encounter any question about our work, please do not hesitate to submit an issue. If you do find our resources helpful, please cite our paper:
+
+```
+
+```
