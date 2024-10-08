@@ -24,6 +24,34 @@ The specific introductions of the team members are as follows:
 
 We are gradually releasing resources, and more will be available soon. Stay tuned as we continue to share new updates over time!
 
+
+## Some Real Examples
+
+We present a few intuitive examples of math problems, from which it can be seen that our currently trained model demonstrates OpenAI O1’s abilities of self-reflection, self-correction, and backtracking, performing well on complex problems.
+
+<details>
+<summary>Case 1</summary>
+
+<p align="center"> <img src="./images/our-case1.png" style="width: 80%;" id="title-icon">       </p>
+
+</details>
+
+<details>
+<summary>Case 2</summary>
+
+<p align="center"> <img src="./images/our-case2.png" style="width: 80%;" id="title-icon">       </p>
+
+</details>
+
+
+<details>
+<summary>Case 3</summary>
+
+<p align="center"> <img src="./images/our-case3.png" style="width: 80%;" id="title-icon">       </p>
+
+</details>
+
+
 ## Contents
 
 - [Introduction](#introduction)
@@ -39,9 +67,7 @@ We are gradually releasing resources, and more will be available soon. Stay tune
     - [How to Evaluate our Trials?](#how-to-evaluate-our-trials)
     - [How to Train our Models?](#how-to-train-our-models)
     - [What would be an effective annotation strategy for human-ai collaboration?](#what-would-be-an-effective-annotation-strategy-for-human-ai-collaboration)
-- [Some Real Examples](#some-real-examples)
 - [Released Resources](#released-resources)
-- [About the Team](#about-the-team)
 - [Contact us](#contact-us)
 - [Citation](#citation)
 
@@ -175,14 +201,6 @@ Once the human annotations are completed, AI-driven processes take over. We use 
 
 - **Student-Explorer Perspective:** The LLMs approach problem-solving with curiosity, thinking through it as if for the first time, encouraging critical engagement in the learning process.
 
-
-## Some Real Examples
-
-<p align="center"> <img src="./images/our-case1.png" style="width: 80%;" id="title-icon">       </p>
-
-<p align="center"> <img src="./images/our-case2.png" style="width: 80%;" id="title-icon">       </p>
-
-<p align="center"> <img src="./images/our-case3.png" style="width: 80%;" id="title-icon">       </p>
 
 
 ## Released Resources
