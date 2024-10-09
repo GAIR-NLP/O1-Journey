@@ -24,6 +24,10 @@ The specific introductions of the team members are as follows:
 
 We are gradually releasing resources, and more will be available soon. Stay tuned as we continue to share new updates over time!
 
+## Progress
+
+* we are still trying to put more resources here ...
+
 
 ## Some Real Examples
 
