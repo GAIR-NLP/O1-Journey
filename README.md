@@ -1,4 +1,5 @@
 # O1 Replication Journey: A Strategic Progress Report
+[**Report**]([https://github.com/GAIR-NLP/abel/#models-and-performance](https://github.com/GAIR-NLP/O1-Journey/blob/main/resource/report.pdf)) | [Walnut Plan](https://gair-nlp.github.io/walnut-plan/)
 
 ![](./images/cute_o1.png)
 
