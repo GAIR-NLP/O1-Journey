@@ -1,12 +1,12 @@
 # O1 Replication Journey: A Strategic Progress Report
-[**Report**](https://github.com/GAIR-NLP/O1-Journey/blob/main/resource/report.pdf) | [**Walnut Plan**](https://gair-nlp.github.io/walnut-plan/)
+[**Report**](https://github.com/GAIR-NLP/O1-Journey/blob/main/resource/report.pdf) | [**Walnut Plan**](https://gair-nlp.github.io/walnut-plan/) | [**Citation**](#citation)
 
 ![](./images/cute_o1.png)
 
 
 ## Updates
 
-- [2024/10/09] 🎉 We have officially released **the first** Strategic Report on O1 Replication. We propose a new training paradigm called **"journey learning"**, which, for **the first time**, has been validated as an effective learning method for complex reasoning tasks.
+- [2024/10/09] 🚨 We have officially released **the first** Strategic Report on O1 Replication. We introduce a new training paradigm called ‘journey learning’ and get **the first** successful model that integrates search and learning in mathematical reasoning. The search process incorporates trial-and-error, correction, backtracking, and reflection, making this **the first** effective approach for complex reasoning tasks. If you do find our resources helpful, please [cite our paper](#citation).
 
 
 ## About the Team
@@ -222,8 +222,6 @@ Once the human annotations are completed, AI-driven processes take over. We use 
 If you are interested in our project and would like to join us, feel free to send an email to [stefanpengfei@gmail.com](mailto:stefanpengfei@gmail.com).
 
 ## Citation
-
-If you encounter any question about our work, please do not hesitate to submit an issue. If you do find our resources helpful, please cite our paper:
 
 ```
 @misc{o1journey,
