@@ -226,7 +226,7 @@ If you are interested in our project and would like to join us, feel free to sen
 If you encounter any question about our work, please do not hesitate to submit an issue. If you do find our resources helpful, please cite our paper:
 
 ```
-@misc{abel,
+@misc{o1journey,
   author = {Yiwei Qin and Xuefeng Li and Haoyang Zou and Yixiu Liu and Shijie Xia and Zhen Huang and Yixin Ye and Weizhe Yuan and Hector Liu and Yuanzhi Li and Pengfei Liu},
   title = {O1 Replication Journey: A Strategic Progress Report – Part 1},
   year = {2024},
