@@ -4,6 +4,11 @@
 ![](./images/cute_o1.png)
 
 
+## Updates
+
+- [2024/10/09] 🎉 We have officially released **the first** Strategic Report on O1 Replication. We propose a new training paradigm called **"journey learning"**, which, for the first time, has been validated as an effective learning method for complex reasoning tasks.
+
+
 ## About the Team
 
 The core development team of this project mainly consists of third- and fourth-year undergraduate students, as well as first-year PhD students from the GAIR research group at Shanghai Jiao Tong University. The project has been guided by leading research scientists in the field of large language models, including those from NYU and MBZUAI.
@@ -160,7 +165,7 @@ Once the reasoning tree is constructed, the next step is to derive a long though
 
 - **1. Constructing the Shortcut:** We first construct the shortCut from the reasoning tree, which includes only the correct answer and valid intermediate steps. Starting from the root node, which represents a question, we identify a path that leads to a correct answer leaf node. If there are multiple correct answer nodes, multiple correct paths will be established.
 
-- **2. raversal Path:** To generate a long thought, we use Depth First Search (DFS) to explore the reasoning tree. The DFS explores both correct and incorrect paths, documenting each step and its reasoning. To simplify the process and reduce excessive exploration, we set constraints—allowing only a limited number of trials on incorrect paths for each node.
+- **2. Traversal Path:** To generate a long thought, we use Depth First Search (DFS) to explore the reasoning tree. The DFS explores both correct and incorrect paths, documenting each step and its reasoning. To simplify the process and reduce excessive exploration, we set constraints—allowing only a limited number of trials on incorrect paths for each node.
 
 - **3. Long Thought Construction:** After generating the traversal path, we compile a draft long thought that includes reasoning for both correct and incorrect steps. However, initial drafts produced suboptimal results, so we use GPT-4o to refine the draft, improving coherence while preserving the reflections, corrections, and reasoning steps. This results in a long thought that not only captures the complete problem-solving process but also flows naturally, simulating human-like reasoning.
 
@@ -221,5 +226,12 @@ If you are interested in our project and would like to join us, feel free to sen
 If you encounter any question about our work, please do not hesitate to submit an issue. If you do find our resources helpful, please cite our paper:
 
 ```
-
+@misc{abel,
+  author = {Yiwei Qin and Xuefeng Li and Haoyang Zou and Yixiu Liu and Shijie Xia and Zhen Huang and Yixin Ye and Weizhe Yuan and Hector Liu and Yuanzhi Li and Pengfei Liu},
+  title = {O1 Replication Journey: A Strategic Progress Report – Part 1},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/GAIR-NLP/O1-Journey}},
+}
 ```
