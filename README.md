@@ -6,7 +6,7 @@
 
 ## Updates
 
-- [2024/10/09] 🎉 We have officially released **the first** Strategic Report on O1 Replication. We propose a new training paradigm called **"journey learning"**, which, for the first time, has been validated as an effective learning method for complex reasoning tasks.
+- [2024/10/09] 🎉 We have officially released **the first** Strategic Report on O1 Replication. We propose a new training paradigm called **"journey learning"**, which, for **the first time**, has been validated as an effective learning method for complex reasoning tasks.
 
 
 ## About the Team
