@@ -6,7 +6,7 @@
 
 ## Updates
 
-- [2024/10/16] We have released the long thought training data samples on 🤗 [Hugging Face](https://huggingface.co/datasets/GAIR/o1-journey).
+- [2024/10/16] We have released the long thought training dataset on 🤗 [Hugging Face](https://huggingface.co/datasets/GAIR/o1-journey).
 - [2024/10/09] 🚨 We have officially released **the first** Strategic Report on O1 Replication. We introduce a new training paradigm called ‘journey learning’ and propose **the first** model that successfully integrates search and learning in mathematical reasoning. The search process incorporates trial-and-error, correction, backtracking, and reflection, making this **the first** effective approach for complex reasoning tasks. If you do find our resources helpful, please [cite our paper](#citation).
 
 
