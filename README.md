@@ -85,7 +85,7 @@ Case 1: (A detailed case comparing our model with OpenAI O1-preview and GPT-4o)
 
 ## Introduction
 
-This paper introduces a pioneering approach to artificial intelligence research, embodied in our O1 Replication Journey. In response to the announcement of OpenAI’s groundbreaking O1 model, we embark on a **transparent**, **real-time exploration** to eplicate its capabilities while reimagining the process of conducting and communicating AI research. 
+This paper introduces a pioneering approach to artificial intelligence research, embodied in our O1 Replication Journey. In response to the announcement of OpenAI’s groundbreaking O1 model, we embark on a **transparent**, **real-time exploration** to replicate its capabilities while reimagining the process of conducting and communicating AI research. 
 
 ## About Progress Report
 
