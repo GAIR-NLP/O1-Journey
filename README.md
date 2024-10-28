@@ -1,5 +1,5 @@
 # O1 Replication Journey: A Strategic Progress Report
-[**Report**](https://github.com/GAIR-NLP/O1-Journey/blob/main/resource/report.pdf) | [**Dataset**](https://huggingface.co/datasets/GAIR/o1-journey) | [**Walnut Plan**](https://gair-nlp.github.io/walnut-plan/) | [**Citation**](#citation)
+[**Report**](https://arxiv.org/pdf/2410.18982) | [**Dataset**](https://huggingface.co/datasets/GAIR/o1-journey) | [**Walnut Plan**](https://gair-nlp.github.io/walnut-plan/) | [**Citation**](#citation)
 
 ![](./images/cute_o1.png)
 
@@ -225,12 +225,11 @@ If you are interested in our project and would like to join us, feel free to sen
 ## Citation
 
 ```
-@misc{o1journey,
+@article{o1journey,
   author = {Yiwei Qin and Xuefeng Li and Haoyang Zou and Yixiu Liu and Shijie Xia and Zhen Huang and Yixin Ye and Weizhe Yuan and Zhengzhong Liu and Yuanzhi Li and Pengfei Liu},
   title = {O1 Replication Journey: A Strategic Progress Report – Part 1},
   year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/GAIR-NLP/O1-Journey}},
+  journal={arXiv preprint arXiv:2410.18982},
+  url={https://arxiv.org/abs/2410.18982}
 }
 ```
