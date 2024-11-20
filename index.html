@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI">
+  <meta name="keywords" content="LLMs, LMMs, Reasoning, Evaluation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI</title>
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/GAIR-NLP/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/GAIR-NLP/abel">
+            Abel
+          </a>
+          <a class="navbar-item" href="https://gair-nlp.github.io/MathPile/">
+            MathPile
+          </a>
+          <a class="navbar-item" href="https://gair-nlp.github.io/ReAlign/">
+            ReAlign
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">🏟️ OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="http://huangzhen02.github.io">Zhen Huang</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://tinyurl.com/zengzhi-homepage">Zengzhi Wang</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://shijie-xia.github.io/">Shijie Xia</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/hongtangshui">Xuefeng Li</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/haoy-zzz">Haoyang Zou</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/VagueWine">Ruijie Xu</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://rzfan525.github.io/">Run-Ze Fan</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://greenyea-com.webflow.io/">Lyumanshan Ye</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://ethanc111.github.io/">Ethan Chern</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/BLeaves">Yixin Ye</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="http://arist12.github.io/ykzhang/">Yikai Zhang</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://ayyyq.github.io/">Yuqing Yang</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="http://cuteythyme.github.io">Ting Wu</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/binjie-wang-91514b25a/">Binjie Wang</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://shichaosun.github.io/">Shichao Sun</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://xiaoyang66.github.io/">Yang Xiao</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://nativeatom.github.io/">Yiyuan Li</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://koalazf99.github.io/">Fan Zhou</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://steffichern.github.io/">Steffi Chern</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://qinyiwei.github.io/">Yiwei Qin</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://mantle2048.github.io/">Yan Ma</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/JoyBoy-Su">Jiadi Su</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/yxliu0903">Yixiu Liu</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://github.com/zeetc">Yuxiang Zheng</a><sup>1, 3</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=oiBMWK4AAAAJ&hl=en">Shaoting Zhang</a><sup>2*</sup>,</span>
+            <span class="author-block"><a href="http://dahua.site/">Dahua Lin</a><sup>2*</sup>,</span>
+            <span class="author-block"><a href="http://mmlab.siat.ac.cn/yuqiao">Yu Qiao</a><sup>2*</sup>,</span>
+            <span class="author-block"><a href="http://pfliu.com/">Pengfei Liu</a><sup>1, 2, 3*</sup></span>
+        </div>
+        
+        <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University,</span>
+            <span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory,</span>
+            <span class="author-block"><sup>3</sup>Generative AI Research Lab (GAIR)</span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><sup>*</sup>Corresponding authors</span>
+        </div>
+        
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+              <a href="https://arxiv.org/pdf/2406.12753" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://github.com/GAIR-NLP/OlympicArena" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            <!-- Dataset Link. -->
+            <span class="link-block">
+              <a href="https://huggingface.co/datasets/GAIR/OlympicArena/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <p style="font-size:18px">🤗</p>
+                </span>
+                <span>Datasets</span>
+              </a>
+            </span>
+            <!-- Leaderboard Link. -->
+            <span class="link-block">
+              <a href="#leaderboard" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <p style="font-size:18px">🏟️</p>
+                </span>
+                <span>Leaderboard</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://huggingface.co/spaces/GAIR/OlympicArenaSubmission" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <p style="font-size:18px">📤</p>
+                </span>
+                <span>Submit</span>
+              </a>
+            </span>
+            <!-- Twitter Link. -->
+            <span class="link-block">
+              <a href="https://x.com/_akhaliq/status/1803265217826107588" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span>Twitter by AK</span>
+              </a>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-centered">
+          <img src="static/images/logo.jpg" width=100%/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">🚀 Brief Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            The evolution of Artificial Intelligence (AI) has been significantly accelerated by advancements in Large Language Models (LLMs) and Large Multimodal Models (LMMs), gradually showcasing potential cognitive reasoning abilities in problem-solving and scientific discovery (i.e., AI4Science) once exclusive to human intellect. In this paper, we introduce OlympicArena, a comprehensive, highly-challenging, and rigorously curated benchmark featuring a detailed, fine-grained evaluation mechanism designed to assess advanced AI capabilities across a broad spectrum of Olympic-level challenges.
+          </p>
+
+          <div align="center">
+            <img src="static/images/overview.png" width=100%/>
+          </div>
+            
+
+          <ul>
+            <li><b>Comprehensive: </b>The benchmark includes a comprehensive set of 11,163 problems from 62 distinct Olympic competitions, structured with 13 answer types. It spans seven core disciplines: <b>mathematics, physics, chemistry, biology, geography, astronomy, and computer science</b>, encompassing a total of 34 specialized branches</li>
+            <li><b>High-challenging: </b>The benchmark focuses on Olympic-level problems and covers 8 types of logical reasoning abilities and 5 types of visual reasoning abilities.</li>
+            <li><b>Rigorous: </b>Given the increasing scale of pre-training corpora, it is crucial to detect potential benchmark leakage. We employ a recently proposed instance-level leakage detection metric to validate our benchmark’s effectiveness.</li>
+            <li><b>Fine-grained Evaluation: </b>We conduct comprehensive evaluations from both the answer-level and process-level perspectives.  Additionally, we perform fine-grained evaluations and analyses on different types of cognitive reasoning, from both logical and visual perspectives to better interpret the current capabilities of AI.</li>
+          </ul>
+
+          <p>
+            Through the OlympicArena, we aim to advance AI towards superintelligence, equipping it to address more complex challenges in science and beyond.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 id="leaderboard" class="title is-3">🏟️ Leaderboard</h2>
+        <div class="content">
+
+          <div class="content has-text-justified">
+            <p>
+              We evaluate various models, including LLMs and LMMs, considering both closed- and open-source versions. All experiments utilize zero-shot prompts, specifically tailored to each answer type and specifying output formats to facilitate answer extraction and rule-based matching. For the LLMs, we do not provide any image information, considering the potential hallucinations and instability in captions, which also allows for a better comparison with LMMs.
+            </p>
+            <p>
+              For CS problems, we set the inference temperature to 0.2 to obtain multiple and diverse candidate results, while for all other disciplines, the temperature is set to 0.0. Additionally, we set the maximum length of output tokens to 2048. Note that some LMMs only support a single image input; in such cases, we input only the first image. For LMMs that require a compulsive image input, we use their corresponding text-only model when handling text-only problems. Here is the leaderboard for our benchmark's validation and test sets.
+            </p>
+            <p>
+              Note: The results reported in the paper are based on the combined outcomes from the validation and test sets, as well as some additional problems evaluated by the models. Therefore, they may slightly differ from the data presented below.
+            </p>
+          </div>
+
+          <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)</button>
+          
+          <div class="model-labels-container">
+            <span class="leaderboard-label" style="background-color: rgba(249, 242, 248, 1);">Open-Source</span>
+            <span class="leaderboard-label" style="background-color: rgba(117, 209, 215, 0.1);">Proprietary</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div style="overflow-x: auto;">
+          <!-- Validation Set Leaderboard -->
+          <div style="min-width: 100%; display: flex;">
+
+            <table id="table1" class="js-sort-table table">
+              <tr>
+                <td class="js-sort-number" style="min-width: 160px;"><strong>Model</strong></td>
+                <td class="js-sort-string"><strong>Setting</strong></td>
+                <td class="js-sort-date" style="min-width: 100px;"><strong>Date</strong></td>
+                <td class="js-sort-number"><strong>Overall</strong></td>
+                <td class="js-sort-number"><strong>Math</strong></td>
+                <td class="js-sort-number"><strong>Physics</strong></td>
+                <td class="js-sort-number"><strong>Chemistry</strong></td>
+                <td class="js-sort-number"><strong>Biology</strong></td>
+                <td class="js-sort-number"><strong>Geography</strong></td>
+                <td class="js-sort-number"><strong>Astronomy</strong></td>
+                <td class="js-sort-number"><strong>CS</strong></td>
+                <td class="js-sort-number"><strong>EN</strong></td>
+                <td class="js-sort-number"><strong>ZH</strong></td>
+                <td class="js-sort-number" style="min-width: 100px;"><strong>Text-only</strong></td>
+                <td class="js-sort-number" style="min-width: 110px;"><strong>Multi-modal</strong></td>
+              </tr>
+              
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://openai.com/index/hello-gpt-4o/">
+                      <b>GPT-4o</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>34.01</td>
+                <td>34.43</td>
+                <td>34.44</td>
+                <td>29.23</td>
+                <td>30.16</td>
+                <td>44.12</td>
+                <td>33.33</td>
+                <td>15.56</td>
+                <td>34.44</td>
+                <td>33.55</td>
+                <td>35.93</td>
+                <td>31.54</td>
+              </tr>
+
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://openai.com/index/gpt-4v-system-card/">
+                      <b>GPT-4V</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>26.18</td>
+                <td>22.95</td>
+                <td>26.67</td>
+                <td>30.77</td>
+                <td>25.40</td>
+                <td>33.82</td>
+                <td>28.89</td>
+                <td>7.78</td>
+                <td>24.47</td>
+                <td>28.01</td>
+                <td>27.30</td>
+                <td>24.73</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://www.anthropic.com/claude">
+                      <b>Claude-3-Sonnet</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>18.97</td>
+                <td>12.70</td>
+                <td>20.00</td>
+                <td>18.46</td>
+                <td>28.57</td>
+                <td>25.00</td>
+                <td>25.56</td>
+                <td>6.67</td>
+                <td>19.34</td>
+                <td>18.57</td>
+                <td>18.66</td>
+                <td>19.35</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://deepmind.google/technologies/gemini/pro/">
+                      <b>Gemini Pro Vision</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>17.08</td>
+                <td>11.07</td>
+                <td>15.56</td>
+                <td>15.38</td>
+                <td>33.33</td>
+                <td>30.88</td>
+                <td>16.67</td>
+                <td>2.22</td>
+                <td>12.69</td>
+                <td>21.82</td>
+                <td>16.43</td>
+                <td>17.92</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/spaces/Qwen/Qwen-VL-Max">
+                      <b>Qwen-VL-Max</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>17.08</td>
+                <td>10.25</td>
+                <td>10.00</td>
+                <td>20.00</td>
+                <td>28.57</td>
+                <td>35.29</td>
+                <td>22.22</td>
+                <td>0</td>
+                <td>11.18</td>
+                <td>23.45</td>
+                <td>16.43</td>
+                <td>17.92</td>
+              </tr>
+
+
+              
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/liuhaotian/llava-v1.6-34b">
+                      <b>LLaVA-NeXT-34B</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>12.70</td>
+                <td>3.69</td>
+                <td>8.89</td>
+                <td>15.38</td>
+                <td>26.98</td>
+                <td>35.29</td>
+                <td>14.44</td>
+                <td>0</td>
+                <td>6.34</td>
+                <td>19.54</td>
+                <td>8.91</td>
+                <td>17.56</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5">
+                      <b>InternVL-Chat-V1.5</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>12.70</td>
+                <td>5.74</td>
+                <td>7.78</td>
+                <td>15.38</td>
+                <td>28.57</td>
+                <td>27.94</td>
+                <td>13.33</td>
+                <td>2.78</td>
+                <td>7.85</td>
+                <td>17.92</td>
+                <td>11.70</td>
+                <td>13.98</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/01-ai/Yi-VL-34B">
+                      <b>Yi-VL-34B</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>9.87</td>
+                <td>3.28</td>
+                <td>6.67</td>
+                <td>13.85</td>
+                <td>19.05</td>
+                <td>25.00</td>
+                <td>12.22</td>
+                <td>0</td>
+                <td>5.44</td>
+                <td>14.66</td>
+                <td>9.19</td>
+                <td>10.75</td>
+
+              </tr>
+              
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/Qwen/Qwen-VL-Chat">
+                      <b>Qwen-VL-Chat</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>4.08</td>
+                <td>2.05</td>
+                <td>5.56</td>
+                <td>4.62</td>
+                <td>4.76</td>
+                <td>7.35</td>
+                <td>5.56</td>
+                <td>0</td>
+                <td>3.63</td>
+                <td>4.56</td>
+                <td>4.18</td>
+                <td>3.94</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/Qwen/Qwen1.5-32B-Chat">
+                      <b>Qwen1.5-32B-Chat</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>21.16</td>
+                <td>13.11</td>
+                <td>15.56</td>
+                <td>16.92</td>
+                <td>28.57</td>
+                <td>47.06</td>
+                <td>30.00</td>
+                <td>3.33</td>
+                <td>15.11</td>
+                <td>27.69</td>
+                <td>19.22</td>
+                <td>23.66</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/internlm/internlm2-chat-20b">
+                      <b>Internlm2-Chat-20B</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>13.95</td>
+                <td>7.38</td>
+                <td>7.78</td>
+                <td>18.46</td>
+                <td>31.75</td>
+                <td>32.35</td>
+                <td>10.00</td>
+                <td>2.22</td>
+                <td>8.16</td>
+                <td>20.20</td>
+                <td>11.70</td>
+                <td>16.85</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/01-ai/Yi-34B-Chat">
+                      <b>Yi-34B-Chat</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>12.54</td>
+                <td>3.28</td>
+                <td>7.78</td>
+                <td>15.38</td>
+                <td>20.63</td>
+                <td>42.65</td>
+                <td>14.44</td>
+                <td>0</td>
+                <td>5.44</td>
+                <td>20.20</td>
+                <td>8.64</td>
+                <td>17.56</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/Qwen/Qwen-7B-Chat">
+                      <b>Qwen-7B-Chat</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>3.45</td>
+                <td>2.05</td>
+                <td>3.33</td>
+                <td>3.08</td>
+                <td>7.94</td>
+                <td>2.94</td>
+                <td>5.56</td>
+                <td>0</td>
+                <td>2.11</td>
+                <td>4.89</td>
+                <td>3.34</td>
+                <td>3.58</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">
+                      <b>Llama-3-70B-Instruct</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-21</td>
+                <td>21.63</td>
+                <td>15.16</td>
+                <td>22.22</td>
+                <td>21.54</td>
+                <td>26.98</td>
+                <td>32.35</td>
+                <td>30.00</td>
+                <td>2.22</td>
+                <td>19.03</td>
+                <td>24.43</td>
+                <td>22.56</td>
+                <td>20.43</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://www.anthropic.com/news/claude-3-5-sonnet">
+                      <b>Claude-3.5-Sonnet</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-21</td>
+                <td>33.54</td>
+                <td>30.74</td>
+                <td>31.11</td>
+                <td>30.77</td>
+                <td>39.68</td>
+                <td>45.59</td>
+                <td>35.56</td>
+                <td>14.44</td>
+                <td>30.21</td>
+                <td>37.13</td>
+                <td>35.38</td>
+                <td>31.18</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://ai.google.dev/gemini-api">
+                      <b>Gemini-1.5-Pro</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-22</td>
+                <td>28.68</td>
+                <td>23.77</td>
+                <td>27.78</td>
+                <td>26.15</td>
+                <td>31.75</td>
+                <td>44.12</td>
+                <td>33.33</td>
+                <td>12.22</td>
+                <td>25.08</td>
+                <td>32.57</td>
+                <td>28.69</td>
+                <td>28.67</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://www.volcengine.com/product/doubao">
+                      <b>Doubao-Pro-32k</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-25</td>
+                <td>31.66</td>
+                <td>25.82</td>
+                <td>22.22</td>
+                <td>36.92</td>
+                <td>50.79</td>
+                <td>41.18</td>
+                <td>36.67</td>
+                <td>8.89</td>
+                <td>23.26</td>
+                <td>40.72</td>
+                <td>33.43</td>
+                <td>29.39</td>
+              </tr>
+
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://github.com/deepseek-ai/DeepSeek-Coder-V2">
+                      <b>DeepSeek-Coder-V2</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-26</td>
+                <td>29.31</td>
+                <td>29.51</td>
+                <td>26.67</td>
+                <td>23.08</td>
+                <td>33.33</td>
+                <td>35.29</td>
+                <td>32.22</td>
+                <td>6.67</td>
+                <td>27.79</td>
+                <td>30.94</td>
+                <td>32.03</td>
+                <td>25.81</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/Qwen/Qwen2-72B-Instruct">
+                      <b>Qwen2-72B-Instruct</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-5</td>
+                <td>28.84</td>
+                <td>26.23</td>
+                <td>22.22</td>
+                <td>18.46</td>
+                <td>38.10</td>
+                <td>47.06</td>
+                <td>34.44</td>
+                <td>5.56</td>
+                <td>23.87</td>
+                <td>34.20</td>
+                <td>30.92</td>
+                <td>26.16</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/internlm/internlm2_5-7b-chat">
+                      <b>Internlm-2.5-7B-Chat</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-8</td>
+                <td>18.65</td>
+                <td>13.52</td>
+                <td>11.11</td>
+                <td>12.31</td>
+                <td>34.92</td>
+                <td>36.92</td>
+                <td>22.22</td>
+                <td>5.56</td>
+                <td>14.20</td>
+                <td>23.45</td>
+                <td>17.55</td>
+                <td>20.07</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5">
+                      <b>MiniCPM-Llama3-V-2_5</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-12</td>
+                <td>11.91</td>
+                <td>5.33</td>
+                <td>13.33</td>
+                <td>10.77</td>
+                <td>23.81</td>
+                <td>23.53</td>
+                <td>13.33</td>
+                <td>2.22</td>
+                <td>8.76</td>
+                <td>15.31</td>
+                <td>11.14</td>
+                <td>12.90</td>
+              </tr>
+
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/mistralai/mathstral-7B-v0.1">
+                      <b>Mathstral-7B-v0.1</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-22</td>
+                <td>16.61</td>
+                <td>15.98</td>
+                <td>15.56</td>
+                <td>10.77</td>
+                <td>15.87</td>
+                <td>25.00</td>
+                <td>20.00</td>
+                <td>4.44</td>
+                <td>14.50</td>
+                <td>18.89</td>
+                <td>17.83</td>
+                <td>15.05</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/OpenGVLab/InternVL2-8B">
+                      <b>InternVL2-8B</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-22</td>
+                <td>14.73</td>
+                <td>12.70</td>
+                <td>7.78</td>
+                <td>10.77</td>
+                <td>23.81</td>
+                <td>29.41</td>
+                <td>15.56</td>
+                <td>0.00</td>
+                <td>10.57</td>
+                <td>19.22</td>
+                <td>15.60</td>
+                <td>13.62</td>
+              </tr>
+
+                            
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/">
+                      <b>GPT-4o-mini</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-24</td>
+                <td>28.37</td>
+                <td>34.02</td>
+                <td>25.56</td>
+                <td>16.92</td>
+                <td>31.75</td>
+                <td>30.88</td>
+                <td>23.33</td>
+                <td>6.67</td>
+                <td>28.70</td>
+                <td>28.01</td>
+                <td>32.87</td>
+                <td>22.58</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/internlm/internlm-xcomposer2d5-7b">
+                      <b>Internlm-xcomposer-2.5-7B</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-24</td>
+                <td>12.70</td>
+                <td>5.74</td>
+                <td>6.67</td>
+                <td>18.46</td>
+                <td>22.22</td>
+                <td>30.88</td>
+                <td>15.56</td>
+                <td>0.00</td>
+                <td>7.25</td>
+                <td>18.57</td>
+                <td>10.86</td>
+                <td>15.05</td>
+              </tr>
+
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct">
+                      <b>Llama-3.1-8B-Instruct</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-8-1</td>
+                <td>14.73</td>
+                <td>11.48</td>
+                <td>17.78</td>
+                <td>10.77</td>
+                <td>19.05</td>
+                <td>27.94</td>
+                <td>12.22</td>
+                <td>5.56</td>
+                <td>14.50</td>
+                <td>14.98</td>
+                <td>15.32</td>
+                <td>13.98</td>
+              </tr>
+
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/OpenGVLab/InternVL2-40B">
+                      <b>InternVL2-40B</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-8-6</td>
+                <td>15.52</td>
+                <td>5.74</td>
+                <td>14.44</td>
+                <td>10.77</td>
+                <td>38.10</td>
+                <td>36.76</td>
+                <td>17.78</td>
+                <td>0.00</td>
+                <td>11.48</td>
+                <td>19.87</td>
+                <td>14.21</td>
+                <td>17.20</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/google/gemma-2-27b-it">
+                      <b>Gemma2-27B-it</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-8-15</td>
+                <td>19.91</td>
+                <td>14.34</td>
+                <td>23.33</td>
+                <td>18.46</td>
+                <td>28.57</td>
+                <td>29.41</td>
+                <td>22.22</td>
+                <td>1.11</td>
+                <td>17.52</td>
+                <td>22.48</td>
+                <td>19.78</td>
+                <td>20.07</td>
+              </tr>
+
+
+
+
+            </table>
+            <!-- Test Set Leaderboard -->
+            <table id="table2" class="js-sort-table table hidden">
+              <tr>
+                <td class="js-sort-number" style="min-width: 160px;"><strong>Model</strong></td>
+                <td class="js-sort-string"><strong>Setting</strong></td>
+                <td class="js-sort-date" style="min-width: 100px;"><strong>Date</strong></td>
+                <td class="js-sort-number"><strong>Overall</strong></td>
+                <td class="js-sort-number"><strong>Math</strong></td>
+                <td class="js-sort-number"><strong>Physics</strong></td>
+                <td class="js-sort-number"><strong>Chemistry</strong></td>
+                <td class="js-sort-number"><strong>Biology</strong></td>
+                <td class="js-sort-number"><strong>Geography</strong></td>
+                <td class="js-sort-number"><strong>Astronomy</strong></td>
+                <td class="js-sort-number"><strong>CS</strong></td>
+                <td class="js-sort-number"><strong>EN</strong></td>
+                <td class="js-sort-number"><strong>ZH</strong></td>
+                <td class="js-sort-number" style="min-width: 100px;"><strong>Text-only</strong></td>
+                <td class="js-sort-number" style="min-width: 110px;"><strong>Multi-modal</strong></td>
+              </tr>
+              
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://openai.com/index/hello-gpt-4o/">
+                      <b>GPT-4o</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>40.47</td>
+                <td>28.32</td>
+                <td>30.01</td>
+                <td>46.68</td>
+                <td>53.11</td>
+                <td>56.77</td>
+                <td>44.50</td>
+                <td>8.43</td>
+                <td>44.16</td>
+                <td>34.59</td>
+                <td>41.79</td>
+                <td>39.03</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://openai.com/index/gpt-4v-system-card/">
+                      <b>GPT-4V</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>33.17</td>
+                <td>18.98</td>
+                <td>24.94</td>
+                <td>41.06</td>
+                <td>47.69</td>
+                <td>50.33</td>
+                <td>32.07</td>
+                <td>6.94</td>
+                <td>37.17</td>
+                <td>26.49</td>
+                <td>33.96</td>
+                <td>32.16</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://www.anthropic.com/claude">
+                      <b>Claude-3-Sonnet</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>25.53</td>
+                <td>7.12</td>
+                <td>18.42</td>
+                <td>30.06</td>
+                <td>39.40</td>
+                <td>40.80</td>
+                <td>24.50</td>
+                <td>1.02</td>
+                <td>27.41</td>
+                <td>17.08</td>
+                <td>22.80</td>
+                <td>24.47</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://deepmind.google/technologies/gemini/pro/">
+                      <b>Gemini Pro Vision</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>21.02</td>
+                <td>5.91</td>
+                <td>12.97</td>
+                <td>28.36</td>
+                <td>37.66</td>
+                <td>37.71</td>
+                <td>20.54</td>
+                <td>1.39</td>
+                <td>22.48</td>
+                <td>18.58</td>
+                <td>19.38</td>
+                <td>23.10</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/spaces/Qwen/Qwen-VL-Max">
+                      <b>Qwen-VL-Max</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>21.41</td>
+                <td>6.68</td>
+                <td>14.12</td>
+                <td>24.52</td>
+                <td>36.32</td>
+                <td>40.41</td>
+                <td>23.42</td>
+                <td>0.83</td>
+                <td>21.34</td>
+                <td>21.52</td>
+                <td>19.86</td>
+                <td>23.37</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/liuhaotian/llava-v1.6-34b">
+                      <b>LLaVA-NeXT-34B</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>18.16</td>
+                <td>2.99</td>
+                <td>11.59</td>
+                <td>22.38</td>
+                <td>33.44</td>
+                <td>36.99</td>
+                <td>18.47</td>
+                <td>0.19</td>
+                <td>19.00</td>
+                <td>16.76</td>
+                <td>16.39</td>
+                <td>20.41</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5">
+                      <b>InternVL-Chat-V1.5</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>17.39</td>
+                <td>6.08</td>
+                <td>10.82</td>
+                <td>20.09</td>
+                <td>30.57</td>
+                <td>33.18</td>
+                <td>15.95</td>
+                <td>0.19</td>
+                <td>18.36</td>
+                <td>15.77</td>
+                <td>15.85</td>
+                <td>19.34</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/01-ai/Yi-VL-34B">
+                      <b>Yi-VL-34B</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>15.07</td>
+                <td>2.92</td>
+                <td>10.82</td>
+                <td>21.05</td>
+                <td>28.09</td>
+                <td>25.16</td>
+                <td>16.94</td>
+                <td>0</td>
+                <td>15.20</td>
+                <td>14.86</td>
+                <td>16.48</td>
+                <td>13.29</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/Qwen/Qwen-VL-Chat">
+                      <b>Qwen-VL-Chat</b>
+                    </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-12</td>
+                <td>7.34</td>
+                <td>1.71</td>
+                <td>5.22</td>
+                <td>9.08</td>
+                <td>12.44</td>
+                <td>14.06</td>
+                <td>8.11</td>
+                <td>0</td>
+                <td>8.32</td>
+                <td>5.69</td>
+                <td>6.52</td>
+                <td>8.38</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/Qwen/Qwen1.5-32B-Chat">
+                      <b>Qwen1.5-32B-Chat</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>24.36</td>
+                <td>9.41</td>
+                <td>15.81</td>
+                <td>32.13</td>
+                <td>39.00</td>
+                <td>40.41</td>
+                <td>27.84</td>
+                <td>0.28</td>
+                <td>23.80</td>
+                <td>25.29</td>
+                <td>23.57</td>
+                <td>25.35</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/internlm/internlm2-chat-20b">
+                      <b>Internlm2-Chat-20B</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>17.33</td>
+                <td>5.78</td>
+                <td>11.13</td>
+                <td>19.13</td>
+                <td>31.91</td>
+                <td>32.13</td>
+                <td>16.49</td>
+                <td>0.46</td>
+                <td>17.82</td>
+                <td>16.52</td>
+                <td>15.76</td>
+                <td>19.32</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/01-ai/Yi-34B-Chat">
+                      <b>Yi-34B-Chat</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>18.01</td>
+                <td>3.06</td>
+                <td>11.13</td>
+                <td>24.52</td>
+                <td>33.18</td>
+                <td>34.69</td>
+                <td>18.29</td>
+                <td>0.19</td>
+                <td>17.43</td>
+                <td>18.98</td>
+                <td>16.26</td>
+                <td>20.23</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                    <a href="https://huggingface.co/Qwen/Qwen-7B-Chat">
+                      <b>Qwen-7B-Chat</b>
+                    </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-20</td>
+                <td>4.34</td>
+                <td>1.55</td>
+                <td>4.45</td>
+                <td>6.50</td>
+                <td>7.29</td>
+                <td>4.60</td>
+                <td>5.59</td>
+                <td>0</td>
+                <td>4.20</td>
+                <td>4.57</td>
+                <td>4.62</td>
+                <td>3.98</td>
+
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://www.anthropic.com/news/claude-3-5-sonnet">
+                      <b>Claude-3.5-Sonnet</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-21</td>
+                <td>39.24</td>
+                <td>23.18</td>
+                <td>31.16</td>
+                <td>47.27</td>
+                <td>56.05</td>
+                <td>55.19</td>
+                <td>43.51</td>
+                <td>5.19</td>
+                <td>43.09</td>
+                <td>32.83</td>
+                <td>39.64</td>
+                <td>38.73</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://ai.google.dev/gemini-api">
+                      <b>Gemini-1.5-Pro</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-6-22</td>
+                <td>35.09</td>
+                <td>19.99</td>
+                <td>28.93</td>
+                <td>43.80</td>
+                <td>49.16</td>
+                <td>49.67</td>
+                <td>38.29</td>
+                <td>5.37</td>
+                <td>38.58</td>
+                <td>29.27</td>
+                <td>35.77</td>
+                <td>34.23</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://www.volcengine.com/product/doubao">
+                      <b>Doubao-Pro-32k</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-25</td>
+                <td>35.40</td>
+                <td>22.44</td>
+                <td>23.56</td>
+                <td>45.79</td>
+                <td>50.37</td>
+                <td>45.47</td>
+                <td>43.24</td>
+                <td>3.33</td>
+                <td>32.94</td>
+                <td>39.51</td>
+                <td>37.11</td>
+                <td>33.23</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://github.com/deepseek-ai/DeepSeek-Coder-V2">
+                      <b>DeepSeek-Coder-V2</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-6-26</td>
+                <td>34.14</td>
+                <td>25.19</td>
+                <td>27.48</td>
+                <td>42.25</td>
+                <td>42.41</td>
+                <td>43.69</td>
+                <td>36.13</td>
+                <td>7.50</td>
+                <td>36.58</td>
+                <td>30.07</td>
+                <td>37.11</td>
+                <td>30.36</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct">
+                      <b>Llama-3-70B-Instruct</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-5</td>
+                <td>26.74</td>
+                <td>11.86</td>
+                <td>20.80</td>
+                <td>33.90</td>
+                <td>42.41</td>
+                <td>42.38</td>
+                <td>26.85</td>
+                <td>2.22</td>
+                <td>29.19</td>
+                <td>22.67</td>
+                <td>26.54</td>
+                <td>26.99</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/Qwen/Qwen2-72B-Instruct">
+                      <b>Qwen2-72B-Instruct</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-5</td>
+                <td>34.11</td>
+                <td>21.06</td>
+                <td>24.41</td>
+                <td>41.36</td>
+                <td>49.23</td>
+                <td>47.11</td>
+                <td>39.55</td>
+                <td>1.85</td>
+                <td>34.67</td>
+                <td>33.17</td>
+                <td>36.09</td>
+                <td>31.59</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/internlm/internlm2_5-7b-chat">
+                      <b>Internlm-2.5-7B-Chat</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-8</td>
+                <td>21.74</td>
+                <td>11.19</td>
+                <td>14.27</td>
+                <td>26.07</td>
+                <td>35.25</td>
+                <td>36.40</td>
+                <td>19.19</td>
+                <td>0.28</td>
+                <td>22.64</td>
+                <td>20.24</td>
+                <td>21.31</td>
+                <td>22.28</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5">
+                      <b>MiniCPM-Llama3-V-2_5</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-12</td>
+                <td>17.41</td>
+                <td>5.17</td>
+                <td>12.43</td>
+                <td>21.42</td>
+                <td>29.77</td>
+                <td>33.57</td>
+                <td>15.77</td>
+                <td>0</td>
+                <td>18.47</td>
+                <td>15.64</td>
+                <td>16.68</td>
+                <td>18.34</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/mistralai/mathstral-7B-v0.1">
+                      <b>Mathstral-7B-v0.1</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-7-22</td>
+                <td>20.07</td>
+                <td>11.56</td>
+                <td>14.04</td>
+                <td>23.86</td>
+                <td>29.23</td>
+                <td>32.59</td>
+                <td>19.37</td>
+                <td>0.46</td>
+                <td>22.02</td>
+                <td>16.81</td>
+                <td>20.71</td>
+                <td>19.25</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/OpenGVLab/InternVL2-8B">
+                      <b>InternVL2-8B</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-22</td>
+                <td>18.49</td>
+                <td>6.21</td>
+                <td>12.74</td>
+                <td>21.57</td>
+                <td>30.84</td>
+                <td>34.63</td>
+                <td>19.28</td>
+                <td>0.00</td>
+                <td>19.40</td>
+                <td>16.97</td>
+                <td>17.59</td>
+                <td>19.64</td>
+              </tr>
+
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+                <td style="text-align: left;">
+                  <a href="https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/">
+                      <b>GPT-4o-mini</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-24</td>
+                <td>34.09</td>
+                <td>27.44</td>
+                <td>27.32</td>
+                <td>38.48</td>
+                <td>41.94</td>
+                <td>45.34</td>
+                <td>33.24</td>
+                <td>6.20</td>
+                <td>38.37</td>
+                <td>26.94</td>
+                <td>37.15</td>
+                <td>30.20</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/internlm/internlm-xcomposer2d5-7b">
+                      <b>Internlm-xcomposer-2.5-7B</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-7-24</td>
+                <td>12.70</td>
+                <td>5.74</td>
+                <td>6.67</td>
+                <td>18.46</td>
+                <td>22.22</td>
+                <td>30.88</td>
+                <td>15.56</td>
+                <td>0.00</td>
+                <td>7.25</td>
+                <td>18.57</td>
+                <td>10.86</td>
+                <td>15.05</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct">
+                      <b>Llama-3.1-8B-Instruct</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-8-1</td>
+                <td>19.36</td>
+                <td>7.89</td>
+                <td>13.35</td>
+                <td>24.89</td>
+                <td>32.64</td>
+                <td>33.77</td>
+                <td>16.31</td>
+                <td>0.83</td>
+                <td>22.69</td>
+                <td>13.82</td>
+                <td>19.38</td>
+                <td>19.34</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/OpenGVLab/InternVL2-40B">
+                      <b>InternVL2-40B</b>
+                  </a>
+                </td>
+                <td>LMM</td>
+                <td>2024-8-6</td>
+                <td>20.01</td>
+                <td>4.60</td>
+                <td>12.74</td>
+                <td>22.67</td>
+                <td>37.86</td>
+                <td>39.42</td>
+                <td>19.82</td>
+                <td>0.00</td>
+                <td>20.62</td>
+                <td>18.98</td>
+                <td>19.60</td>
+                <td>20.53</td>
+              </tr>
+
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+                <td style="text-align: left;">
+                  <a href="https://huggingface.co/google/gemma-2-27b-it">
+                      <b>Gemma2-27B-it</b>
+                  </a>
+                </td>
+                <td>LLM</td>
+                <td>2024-8-15</td>
+                <td>26.32</td>
+                <td>11.42</td>
+                <td>21.03</td>
+                <td>35.52</td>
+                <td>41.74</td>
+                <td>38.83</td>
+                <td>27.66</td>
+                <td>2.50</td>
+                <td>29.14</td>
+                <td>21.63</td>
+                <td>26.99</td>
+                <td>25.47</td>
+              </tr>
+
+
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+            <p class="has-text-left">In addition to presenting scores by discipline, we also display scores by language (EN: English, ZH: Chinese) and by modality. Results marked with an asterisk (*) are provided by the authors. If you wish to have your model's results featured on our website's leaderboard (either val or test), please contact us via email at <a href="mailto:gair.olympicarena@gmail.com">gair.olympicarena@gmail.com</a> with your Submission ID and results.</p>
+        </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 id="medal-leaderboard-title" class="title is-3">
+          <img src="static/images/medal_table_logo.png" alt="Medal Rank" style="height: 125px; width: auto; vertical-align: middle;">
+        </h2>
+
+        <div class="content has-text-justified">
+          <p>
+            The OlympicArena Medal Table, similar to the medal system used in the Olympic Games, is a pioneering ranking mechanism specifically designed to evaluate the performance of AI models across
+            various academic disciplines. This table awards medals to models that achieve the top three scores in any given
+            discipline, thereby providing a clear and competitive framework for comparing different models. Specifically, We 
+            rank AI models first by the number of Gold medals, then by the number of Silver medals, followed by the number of Bronze medals, and finally by the overall score if there are still ties. 
+            It offers a straightforward and intuitive way to
+            identify leading models in distinct academic fields, making it easier for researchers and developers to understand
+            the strengths and weaknesses of different models.
+          </p>
+          <p>
+            Note: The medal table is generated based on the leaderboard scores of the test set.
+          </p>
+
+        </div>
+
+
+        <div id="medal-leaderboard" class="content">
+          <table id="medal-leaderboard-table">
+            <!-- Medal leaderboard will be generated here -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Contact. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">📬 Contact</h2>
+        <div class="content has-text-justified">
+          <p>
+            If you have any questions regarding this project, feel free to reach out to us via email at <a href="mailto:gair.olympicarena@gmail.com">gair.olympicarena@gmail.com</a> or directly submit a <a href="https://github.com/GAIR-NLP/OlympicArena">github issue</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{huang2024olympicarena,
+      title={OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI},
+      author={Zhen Huang and Zengzhi Wang and Shijie Xia and Xuefeng Li and Haoyang Zou and Ruijie Xu and Run-Ze Fan and Lyumanshan Ye and Ethan Chern and Yixin Ye and Yikai Zhang and Yuqing Yang and Ting Wu and Binjie Wang and Shichao Sun and Yang Xiao and Yiyuan Li and Fan Zhou and Steffi Chern and Yiwei Qin and Yan Ma and Jiadi Su and Yixiu Liu and Yuxiang Zheng and Shaoting Zhang and Dahua Lin and Yu Qiao and Pengfei Liu},
+      year={2024},
+      journal={arXiv preprint arXiv:2406.12753},
+      url={https://arxiv.org/abs/2406.12753}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer centered-footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function changeButtonText() {
+    var button = document.getElementById('toggleButton');
+    if (button.innerHTML.includes("Validation Set Leaderboard")) {
+      button.innerHTML = "<b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)";
+    } else {
+      button.innerHTML = "<b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)";
+    }
+  }
+
+  function sortTableByOverall(tableId) {
+    var table = document.getElementById(tableId);
+    var rows = Array.from(table.rows).slice(1);
+
+    rows.sort(function(a, b) {
+      var cellA = parseFloat(a.cells[3].innerText);
+      var cellB = parseFloat(b.cells[3].innerText);
+      return cellB - cellA;
+    });
+
+    rows.forEach(function(row) {
+      table.tBodies[0].appendChild(row);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    sortTableByOverall('table1');
+    sortTableByOverall('table2');
+  });
+
+  function toggleTables() {
+    var table1 = document.getElementById('table1');
+    var table2 = document.getElementById('table2');
+    table1.classList.toggle('hidden');
+    table2.classList.toggle('hidden');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('toggleButton').addEventListener('click', toggleTables);
+  });
+
+  function addMedalsToLeaderboard(tableId) {
+    const table = document.getElementById(tableId);
+    const rows = Array.from(table.rows).slice(1);
+
+    rows.sort((a, b) => parseFloat(b.cells[3].innerText) - parseFloat(a.cells[3].innerText));
+
+    rows.forEach((row, index) => {
+      const modelNameCell = row.cells[0];
+      let medal = '';
+      if (index === 0) {
+        medal = ' 🥇';
+      } else if (index === 1) {
+        medal = ' 🥈';
+      } else if (index === 2) {
+        medal = ' 🥉';
+      }
+      modelNameCell.innerHTML += medal;
+    });
+
+    rows.forEach(row => {
+      table.tBodies[0].appendChild(row);
+    });
+  }
+
+  function calculateMedalCounts() {
+    const table = document.getElementById('table2');
+    const rows = Array.from(table.rows).slice(1);
+
+    const medalCounts = {};
+
+    rows.forEach(row => {
+      const modelName = row.cells[0].innerText.trim().replace(/ 🥇| 🥈| 🥉/g, '');
+      if (!medalCounts[modelName]) {
+        medalCounts[modelName] = { gold: 0, silver: 0, bronze: 0, overall: parseFloat(row.cells[3].innerText) };
+      }
+    });
+
+    const disciplines = ['Math', 'Physics', 'Chemistry', 'Biology', 'Geography', 'Astronomy', 'CS'];
+    disciplines.forEach((discipline, index) => {
+      const scores = rows.map(row => ({
+        model: row.cells[0].innerText.trim().replace(/ 🥇| 🥈| 🥉/g, ''),
+        score: parseFloat(row.cells[4 + index].innerText)
+      }));
+      scores.sort((a, b) => b.score - a.score);
+      
+      if (scores.length > 0) medalCounts[scores[0].model].gold += 1;
+      if (scores.length > 1) medalCounts[scores[1].model].silver += 1;
+      if (scores.length > 2) medalCounts[scores[2].model].bronze += 1;
+    });
+
+    const sortedMedalCounts = Object.entries(medalCounts).sort((a, b) => {
+      if (b[1].gold !== a[1].gold) return b[1].gold - a[1].gold;
+      if (b[1].silver !== a[1].silver) return b[1].silver - a[1].silver;
+      if (b[1].bronze !== a[1].bronze) return b[1].bronze - a[1].bronze;
+      return b[1].overall - a[1].overall;
+    });
+
+    return sortedMedalCounts;
+  }
+
+  function generateMedalLeaderboard() {
+    const sortedMedalCounts = calculateMedalCounts();
+
+    const table = document.createElement('table');
+    table.classList.add('table', 'is-striped', 'is-hoverable');
+
+    const headerRow = table.insertRow();
+    headerRow.classList.add('header-row');
+
+    ['Rank', 'Model', 'Gold', 'Silver', 'Bronze', 'Total', 'Overall'].forEach((text, index) => {
+      const cell = document.createElement('th');
+      cell.classList.add('header-cell');
+
+      if (text === 'Gold') {
+        const img = document.createElement('img');
+        img.src = 'static/images/gold_medal.png';
+        img.classList.add('medal-icon');
+        cell.appendChild(img);
+      } else if (text === 'Silver') {
+        const img = document.createElement('img');
+        img.src = 'static/images/silver_medal.png';
+        img.classList.add('medal-icon');
+        cell.appendChild(img);
+      } else if (text === 'Bronze') {
+        const img = document.createElement('img');
+        img.src = 'static/images/bronze_medal.png';
+        img.classList.add('medal-icon');
+        cell.appendChild(img);
+      } else {
+        cell.textContent = text;
+      }
+    
+      headerRow.appendChild(cell);
+    });
+
+    sortedMedalCounts.forEach(([model, counts], index) => {
+      const row = table.insertRow();
+      row.insertCell().textContent = index + 1;
+      row.insertCell().textContent = model;
+      row.insertCell().textContent = counts.gold;
+      row.insertCell().textContent = counts.silver;
+      row.insertCell().textContent = counts.bronze;
+      row.insertCell().textContent = counts.gold + counts.silver + counts.bronze;
+      row.insertCell().textContent = counts.overall;
+    });
+
+    const container = document.getElementById('medal-leaderboard');
+    container.innerHTML = '';
+    container.appendChild(table);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    addMedalsToLeaderboard('table1');
+    addMedalsToLeaderboard('table2');
+    generateMedalLeaderboard();
+  });
+
+
+</script>
+
+
+
+
+
+
+<style>
+  .hidden {
+      display: none;
+  }
+  .sortable:hover {
+      cursor: pointer;
+  }
+  .asc::after {
+      content: ' ↑';
+  }
+  .desc::after {
+      content: ' ↓';
+  }
+  #toggleButton {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #555555;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.4s;
+  }
+
+  #toggleButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* 鼠标悬停时的阴影效果 */
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  th, td {
+      text-align: left;
+      padding: 8px;
+  }
+
+  th {
+      background-color: #f2f2f2;
+      border-bottom: 2px solid #ddd;
+  }
+
+  td:hover {background-color: #ffffff;}
+  
+  .medal-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .ranking-icon {
+    width: 40px;
+    height: 20px;
+  }
+  .header-cell {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .header-row th{
+    background-color: #fff9c4;
+  }
+  .columns {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  table {
+    width: max-content;
+    min-width: 100%;
+  }
+
+  .centered-footer {
+    text-align: center;
+  }
+
+
+</style>
+
+
+
+
+</body>
+</html>
