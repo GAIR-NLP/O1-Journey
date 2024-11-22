@@ -4,7 +4,7 @@
 
 ## About the Authors
 
-[Zhen Huang](https://huangzhen02.github.io)\*, [Haoyang Zou](https://scholar.google.com/citations?user=btPmUcoAAAAJ&hl=en)\*, [Xuefeng Li](https://scholar.google.com/citations?user=DDRBbxgAAAAJ&hl=zh-CN)\*, [Yixiu Liu](https://scholar.google.com/citations?user=HKUoOq0AAAAJ&hl=zh-CN)\*, [Yuxiang Zheng](https://github.com/Zeetc)\*, [Ethan Chern](#https://ethanc111.github.io/)\*, [Shijie Xia](https://shijie-xia.github.io)\*, [Yiwei Qin](https://qinyiwei.github.io), [Weizhe Yuan](https://yyy-apple.github.io/), [Pengfei Liu](https://plms.ai/)
+[Zhen Huang](https://huangzhen02.github.io)\*, [Haoyang Zou](https://scholar.google.com/citations?user=btPmUcoAAAAJ&hl=en)\*, [Xuefeng Li](https://scholar.google.com/citations?user=DDRBbxgAAAAJ&hl=zh-CN)\*, [Yixiu Liu](https://scholar.google.com/citations?user=HKUoOq0AAAAJ&hl=zh-CN)\*, [Yuxiang Zheng](https://github.com/Zeetc)\*, [Ethan Chern](https://ethanc111.github.io/)\*, [Shijie Xia](https://shijie-xia.github.io)\*, [Yiwei Qin](https://qinyiwei.github.io), [Weizhe Yuan](https://yyy-apple.github.io/), [Pengfei Liu](https://plms.ai/)
 
 * "*" Co-first author
 
