@@ -70,12 +70,11 @@ If you are interested in our project and would like to join us, feel free to sen
 ### Part1:
 
 ```
-@article{o1journey,
-  author = {Yiwei Qin and Xuefeng Li and Haoyang Zou and Yixiu Liu and Shijie Xia and Zhen Huang and Yixin Ye and Weizhe Yuan and Zhengzhong Liu and Yuanzhi Li and Pengfei Liu},
-  title = {O1 Replication Journey: A Strategic Progress Report – Part 1},
-  year = {2024},
+@article{qin2024o1,
+  title={O1 Replication Journey: A Strategic Progress Report--Part 1},
+  author={Qin, Yiwei and Li, Xuefeng and Zou, Haoyang and Liu, Yixiu and Xia, Shijie and Huang, Zhen and Ye, Yixin and Yuan, Weizhe and Liu, Hector and Li, Yuanzhi and others},
   journal={arXiv preprint arXiv:2410.18982},
-  url={https://arxiv.org/abs/2410.18982}
+  year={2024}
 }
 ```
 
