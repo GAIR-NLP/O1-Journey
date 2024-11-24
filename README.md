@@ -83,7 +83,7 @@ If you are interested in our project and would like to join us, feel free to sen
 ```
 @article{o1journeypart2,
   author = {Zhen Huang and Haoyang Zou and Xuefeng Li and Yixiu Liu and Yuxiang Zheng and Ethan Chern and Shijie Xia and Yiwei Qin and Weizhe Yuan and Pengfei Liu},
-  title = {O1 Replication Journey – Part 2: Surpassing O1-preview through Simple Distillation},
+  title = {O1 Replication Journey – Part 2: Surpassing O1-preview through Simple Distillation Big Progress or Bitter Lesson?},
   year = {2024},
   journal = {Github},
   url = {https://github.com/GAIR-NLP/O1-Journey}
