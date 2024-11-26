@@ -21,7 +21,7 @@ The specific introductions of the team members are as follows:
 
 ## Updates
 
-- [2024/11/22] 🚨 We have published a new part of our study on O1-distillation, accompanied by in-depth reflections on the underlying behaviors and phenomena. Check our [report](./resource/report-part2.pdf)!
+- [2024/11/22] 🚨 We have published a new part of our study on O1-distillation, accompanied by in-depth reflections on the underlying behaviors and phenomena. Check our [report](https://arxiv.org/pdf/2411.16489)!
 - [2024/10/16] We have released the journey thought training dataset on 🤗 [Hugging Face](https://huggingface.co/datasets/GAIR/o1-journey).
 - [2024/10/09] 🚨 We have officially released [**the first** Strategic Report on O1 Replication](https://arxiv.org/pdf/2410.18982). We introduce a new training paradigm called ‘journey learning’ and propose **the first** model that successfully integrates search and learning in mathematical reasoning. The search process incorporates trial-and-error, correction, backtracking, and reflection, making this **the first** effective approach for complex reasoning tasks. If you do find our resources helpful, please [cite our paper](#citation).
 
@@ -30,7 +30,7 @@ The specific introductions of the team members are as follows:
 ## Our Journey 🗺️
 
 ### [Part2: Surpassing O1-preview through Simple Distillation (Big Progress or Bitter Lesson?)](./docs/part2.md)
-[**Report (Part2)**](./resource/report-part2.pdf) | [**Citation**](#citation)
+[**Report (Part2)**](https://arxiv.org/pdf/2411.16489) | [**Citation**](#citation)
 
 
 This paper critically examines current methods for replicating OpenAI’s O1 model, focusing on the often-overlooked use of knowledge distillation. While Part 1 explored foundational techniques for O1 replication, this study demonstrates how simple distillation from O1’s API, combined with supervised fine-tuning, can achieve superior performance on complex mathematical reasoning tasks.

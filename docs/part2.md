@@ -1,5 +1,7 @@
 ## Part2: Surpassing O1-preview through Simple Distillation (Big Progress or Bitter Lesson?)
-[**Report (Part2)**](../resource/report-part2.pdf) | [**Citation**](#citation)
+[**Report (Part2)**](https://arxiv.org/pdf/2411.16489) | [**Citation**](#citation)
+
+![](../images/part2/cute_o1.png)
 
 
 ## About the Authors
