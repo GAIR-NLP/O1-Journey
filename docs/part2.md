@@ -180,11 +180,10 @@ Distillation is not inherently problematic; it is a valuable tool in the AI rese
 ## Citation
 
 ```
-@article{o1journeypart2,
-  author = {Zhen Huang and Haoyang Zou and Xuefeng Li and Yixiu Liu and Yuxiang Zheng and Ethan Chern and Shijie Xia and Yiwei Qin and Weizhe Yuan and Pengfei Liu},
-  title = {O1 Replication Journey – Part 2: Surpassing O1-preview through Simple Distillation Big Progress or Bitter Lesson?},
-  year = {2024},
-  journal = {Github},
-  url = {https://github.com/GAIR-NLP/O1-Journey}
+@article{huang2024o1,
+  title={O1 Replication Journey--Part 2: Surpassing O1-preview through Simple Distillation, Big Progress or Bitter Lesson?},
+  author={Huang, Zhen and Zou, Haoyang and Li, Xuefeng and Liu, Yixiu and Zheng, Yuxiang and Chern, Ethan and Xia, Shijie and Qin, Yiwei and Yuan, Weizhe and Liu, Pengfei},
+  journal={arXiv preprint arXiv:2411.16489},
+  year={2024}
 }
 ```
