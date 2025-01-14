@@ -32,6 +32,8 @@ The specific introductions of the team members are as follows:
 ### [Part3: Inference-time Scaling for Medical Reasoning](https://github.com/SPIRAL-MED/Ophiuchus)
 [**Report (Part3)**](https://arxiv.org/pdf/2501.06458) | [**Citation**](#citation)
 
+![](./images/part3/cute_o1.png)
+
 This research explores a novel approach to enhance medical reasoning capabilities in Large Language Models (LLMs) through inference-time scaling. Building upon our previous work on O1 replication through Journey Learning and Distillation (Part1 & Part2), we investigate how extended reasoning time impacts LLMs' performance across various medical tasks. Through comprehensive experiments on medical benchmarks like MedQA, Medbullets, and JAMA Clinical Challenges, we demonstrate that increased inference time leads to significant performance improvements of 6%-11% with just 500 training samples. Notably, our model's differential diagnosis process mirrors the hypothetico-deductive method used by medical professionals, systematically evaluating evidence to narrow down potential conditions. These findings highlight the powerful combination of inference-time scaling and journey learning in advancing LLMs' ability to tackle complex clinical reasoning tasks.
 
 
@@ -39,6 +41,7 @@ This research explores a novel approach to enhance medical reasoning capabilitie
 ### [Part2: Surpassing O1-preview through Simple Distillation (Big Progress or Bitter Lesson?)](./docs/part2.md)
 [**Report (Part2)**](https://arxiv.org/pdf/2411.16489) | [**Citation**](#citation)
 
+![](./images/part2/cute_o1.png)
 
 This paper critically examines current methods for replicating OpenAI’s O1 model, focusing on the often-overlooked use of knowledge distillation. While Part 1 explored foundational techniques for O1 replication, this study demonstrates how simple distillation from O1’s API, combined with supervised fine-tuning, can achieve superior performance on complex mathematical reasoning tasks.
 
@@ -53,6 +56,7 @@ Key findings include:
 ### [Part1: A Strategic Progress Report](./docs/part1.md)
 [**Report (Part1)**](https://arxiv.org/pdf/2410.18982) | [**Dataset**](https://huggingface.co/datasets/GAIR/o1-journey) | [**Walnut Plan**](https://gair-nlp.github.io/walnut-plan/) | [**Citation**](#citation)
 
+![](./images/part1/cute_o1.png)
 
 
 This paper introduces a pioneering approach to artificial intelligence research, embodied in our O1 Replication Journey. In response to the announcement of OpenAI’s groundbreaking O1 model, we embark on a **transparent**, **real-time exploration** to replicate its capabilities while reimagining the process of conducting and communicating AI research. 
