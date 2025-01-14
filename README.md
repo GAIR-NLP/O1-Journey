@@ -104,5 +104,10 @@ If you are interested in our project and would like to join us, feel free to sen
 ### Part3:
 
 ```
-
+@article{huang2025o1replicationjourney,
+      title={O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning}, 
+      author={Zhongzhen Huang and Gui Geng and Shengyi Hua and Zhen Huang and Haoyang Zou and Shaoting Zhang and Pengfei Liu and Xiaofan Zhang},
+      journal={arXiv preprint arXiv:2501.06458},
+      year={2025}
+}
 ```
