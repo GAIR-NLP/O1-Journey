@@ -20,7 +20,7 @@ The specific introductions of the team members are as follows:
 
 
 ## Updates
-
+- [2024/01/14] 🚨 We have released a report on O1 Inference-time Scaling for Medical Reasoning, demonstrating the immense potential of "deep thinking" in medical diagnosis! Check out our [report](https://arxiv.org/pdf/2501.06458)!
 - [2024/11/22] 🚨 We have published a new part of our study on O1-distillation, accompanied by in-depth reflections on the underlying behaviors and phenomena. Check our [report](https://arxiv.org/pdf/2411.16489)!
 - [2024/10/16] We have released the journey thought training dataset on 🤗 [Hugging Face](https://huggingface.co/datasets/GAIR/o1-journey).
 - [2024/10/09] 🚨 We have officially released [**the first** Strategic Report on O1 Replication](https://arxiv.org/pdf/2410.18982). We introduce a new training paradigm called ‘journey learning’ and propose **the first** model that successfully integrates search and learning in mathematical reasoning. The search process incorporates trial-and-error, correction, backtracking, and reflection, making this **the first** effective approach for complex reasoning tasks. If you do find our resources helpful, please [cite our paper](#citation).
@@ -28,6 +28,13 @@ The specific introductions of the team members are as follows:
 
 
 ## Our Journey 🗺️
+
+### [Part3: Inference-time Scaling for Medical Reasoning](https://github.com/SPIRAL-MED/Ophiuchus)
+[**Report (Part3)**](https://arxiv.org/pdf/2501.06458) | [**Citation**](#citation)
+
+This research explores a novel approach to enhance medical reasoning capabilities in Large Language Models (LLMs) through inference-time scaling. Building upon our previous work on O1 replication through Journey Learning and Distillation (Part1 & Part2), we investigate how extended reasoning time impacts LLMs' performance across various medical tasks. Through comprehensive experiments on medical benchmarks like MedQA, Medbullets, and JAMA Clinical Challenges, we demonstrate that increased inference time leads to significant performance improvements of 6%-11% with just 500 training samples. Notably, our model's differential diagnosis process mirrors the hypothetico-deductive method used by medical professionals, systematically evaluating evidence to narrow down potential conditions. These findings highlight the powerful combination of inference-time scaling and journey learning in advancing LLMs' ability to tackle complex clinical reasoning tasks.
+
+
 
 ### [Part2: Surpassing O1-preview through Simple Distillation (Big Progress or Bitter Lesson?)](./docs/part2.md)
 [**Report (Part2)**](https://arxiv.org/pdf/2411.16489) | [**Citation**](#citation)
@@ -87,4 +94,11 @@ If you are interested in our project and would like to join us, feel free to sen
   journal={arXiv preprint arXiv:2411.16489},
   year={2024}
 }
+```
+
+
+### Part3:
+
+```
+
 ```
